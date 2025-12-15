@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Personal Profile </title>
+<style>
+  body{
+    font-family: Times New Roman;
+    background-color:#f4f4f4;
+    padding:20px;
+    margin: auto;
+    border-radius: 10px
+  }
+  h1{
+    text-align: center;
+    color:#333;
+  }
+  p{
+    line-height:1.6
+  }
+  img{
+    display: block;
+    margin: 15px auto;
+    border-radius: 50%;
+  }
+  input, textarea{
+    width: 100%
+    padding: 8px;
+    margin-top: 5px;
+  }
+  button{
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  button:hover{
+    background-color: #555;
+  </style>
+  <script>
+    function showAlert() {
+      alert("Thank you! your message has been submitted.");
+    }
+  </script>
+</head>
+  <body>
+    <div class="container">
+      <h1> Tati Debisa </h1>
+      <p>
+        My name is Tati Debisa.I'm a university student studying Pre-Engineering.I'm interested in programming, problem solving, and learning new information or discoveries on technologies.
+        </p>
+      <img src="https://via.placeholder.com/200" alt="Profile Image">
+      <form onsubmit="showAlert()">
+        <label>Name:</label>
+        <input type="text" required>
+        <label>Email:</label>
+        <input type="email" required>
+        <label>Message:</label>
+        <textarea rows="4" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>

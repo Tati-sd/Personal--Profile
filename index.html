@@ -1,66 +1,88 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title> Personal Profile </title>
-<style>
-  body{
-    font-family: Times New Roman;
-    background-color:#f4f4f4;
-    padding:20px;
-    margin: auto;
-    border-radius: 10px
-  }
-  h1{
-    text-align: center;
-    color:#333;
-  }
-  p{
-    line-height:1.6
-  }
-  img{
-    display: block;
-    margin: 15px auto;
-    border-radius: 50%;
-  }
-  input, textarea{
-    width: 100%
-    padding: 8px;
-    margin-top: 5px;
-  }
-  button{
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    border: none;
-    width: 100%;
-    margin-top: 10px;
-    cursor: pointer;
-  }
-  button:hover{
-    background-color: #555;
-  </style>
-  <script>
-    function showAlert() {
-      alert("Thank you! your message has been submitted.");
-    }
-  </script>
+    <title>Personal Profile</title>
+    <style>
+        body {
+            font-family: Times New Roman;
+            background-color: lightgray;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            background-color: white;
+            padding: 20px;
+            margin: auto;
+            border-radius: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            color: darkgray;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        img {
+            display: block;
+            margin: 15px auto;
+            border-radius: 50%;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+
+        button {
+            background-color: darkgray;
+            color: white;
+            padding: 10px;
+            border: none;
+            width: 100%;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: gray;
+        }
+    </style>
+    <script>
+        function showAlert() {
+            alert("Thank you! Your message has been submitted.");
+        }
+    </script>
 </head>
-  <body>
+<body>
     <div class="container">
-      <h1> Tati Debisa </h1>
-      <p>
-        My name is Tati Debisa.I'm a university student studying Pre-Engineering.I'm interested in programming, problem solving, and learning new information or discoveries on technologies.
+        <h1>Tati Debisa</h1>
+
+        <p>
+            My name is Tati Debisa. I'm a university student studying Pre-Engineering. 
+            I'm interested in programming, problem solving, and learning new information or discoveries on technologies. 
+            I'm really grateful to be able to join this bootcamp to gain more knowledge and improve my understanding of core programming. 
+            I hope all of us will have an amazing time in this learning process. Thank you!
         </p>
-      <img src="https://via.placeholder.com/200" alt="Profile Image">
-      <form onsubmit="showAlert()">
-        <label>Name:</label>
-        <input type="Tati Debisa Olani" required>
-        <label>Gmail:</label>
-        <input type="tatidebisa0@gmail.com" required>
-        <label>Message:</label>
-        <textarea rows="4" required></textarea>
-        <button type="submit">Submit</button>
-      </form>
+
+        <img src="photo.png" alt="Profile Image" width="200">
+
+        <form onsubmit="showAlert()">
+            <label>Name:</label>
+            <input type="text" value="Tati Debisa Olani" required>
+
+            <label>Email:</label>
+            <input type="email" value="tatidebisa0@gmail.com" required>
+
+            <label>Message:</label>
+            <textarea rows="4" required>Hello, this is a sample message from my personal profile page.</textarea>
+
+            <button type="submit">Submit</button>
+        </form>
     </div>
-  </body>
+</body>
 </html>
+
